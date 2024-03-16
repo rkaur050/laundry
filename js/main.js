@@ -131,26 +131,5 @@ $(document).ready(function () {
 });
 
 
-// Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function () {
-    // Select all navigation items
-    var navItems = document.querySelectorAll('.nav-item');
 
-    // Function to remove 'active' class from all nav items
-    function removeActiveClass() {
-        navItems.forEach(function (item) {
-            item.classList.remove('active');
-        });
-    }
-
-    // Add click event listener to each nav item
-    navItems.forEach(function (item) {
-        item.addEventListener('click', function () {
-            // Remove 'active' class from all nav items
-            removeActiveClass();
-            // Add 'active' class to clicked nav item
-            this.classList.add('active');
-        });
-    });
-});
 
